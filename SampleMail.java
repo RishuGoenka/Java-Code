@@ -37,6 +37,9 @@ public class SampleMail {
 
 			message.setSubject("This is the Subject Line!");
 			message.setText("This is actual message");
+			
+			// Send the actual HTML message
+       			// message.setContent("<h1>This is actual message</h1>", "text/html");
 			Transport.send(message);
 			System.out.println("Sent message successfully....");
 		} catch (Exception e) {
